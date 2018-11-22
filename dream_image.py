@@ -33,7 +33,7 @@ img_result = load_image(filename='{}'.format(file_name))
 
 img_result = recursive_optimize(layer_tensor=layer_tensor, image=img_result,
                  # how clear is the dream vs original image        
-                 num_iterations=40, step_size=1.0, rescale_factor=.8,
+                 num_iterations=100, step_size=1.0, rescale_factor=.8,
                  # How many "passes" over the data. More passes, the more granular the gradients will be.
                  num_repeats=25, blend=0.2)
 
